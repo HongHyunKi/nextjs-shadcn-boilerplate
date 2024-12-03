@@ -1,3 +1,22 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "airbnb",                        // Airbnb 규칙을 React와 함께 확장
+    "eslint:recommended",             // 기본 ESLint 규칙
+    "plugin:react/recommended",       // React 관련 권장 규칙
+    "plugin:@typescript-eslint/recommended", // TypeScript 관련 권장 규칙
+    "plugin:prettier/recommended"    // Prettier 규칙과 ESLint 통합
+  ],
+  "plugins": ["prettier", "react", "@typescript-eslint"], // 플러그인 목록
+  "rules": {
+    "prettier/prettier": "error",     // Prettier 오류를 ESLint 에러로 처리
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }], // JSX 파일 확장자 설정
+    "react/react-in-jsx-scope": "off" // React 17 이상에서는 `import React`가 필요 없음
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
 }
