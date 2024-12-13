@@ -6,8 +6,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="p-4">
       <h1>hello world</h1>
+      <h1 className="text-3xl font-bold underline"> TailWind ! </h1>
     </div>
   );
 }
