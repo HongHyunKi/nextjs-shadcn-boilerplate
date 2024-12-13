@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { ModeToggle } from '@/components/theme/ModeToggle';
 
 const navList = [{ name: 'Home', href: '/' }];
 
@@ -27,6 +28,9 @@ export const Header = () => {
               {navItem.name}
             </Link>
           ))}
+        </div>
+        <div>
+          <ModeToggle />
         </div>
       </div>
     </nav>
