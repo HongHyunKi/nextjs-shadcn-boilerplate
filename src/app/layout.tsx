@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className="font-pretendard flex min-h-screen flex-col">
         <ThemeProvider>
           <Header />
-          <main className="mt-[64px] flex flex-1 flex-col mx-auto w-full max-w-[1200px] p-4">
+          <main className="mx-auto mt-[64px] flex w-full max-w-[1200px] flex-1 flex-col p-4">
             {children}
           </main>
           <Footer />
