@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react';
 import { AppSidebar } from '@/components/app-sidebar';
 import {
   Breadcrumb,
@@ -14,7 +15,11 @@ import {
   SidebarTrigger,
 } from '@/components/ui/sidebar';
 
-export default function Page({ children }) {
+interface PageProps {
+  children: ReactNode;
+}
+
+export default function Page({ children }: PageProps) {
   return (
     <SidebarProvider>
       <AppSidebar />
