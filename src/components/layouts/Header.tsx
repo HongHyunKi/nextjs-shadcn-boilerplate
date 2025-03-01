@@ -4,17 +4,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { ModeToggle } from '@/components/theme/ModeToggle';
-
-const navList = [{ name: 'Home', href: '/' }];
+import { NAV_LIST } from '@/constants/routes';
 
 export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed z-40 flex w-full flex-col items-center justify-center border-b bg-background shadow-sm print:hidden">
+    <nav className="fixed z-40 flex w-full flex-col items-center justify-center border-b bg-white shadow-sm dark:bg-black print:hidden">
       <div className="flex h-[var(--header-height)] w-full max-w-[1200px] items-center justify-between px-4">
         <div className="flex items-center font-medium">
-          {navList.map((navItem) => (
+          {NAV_LIST.map((navItem) => (
             <Link
               href={navItem.href}
               key={navItem.name}
