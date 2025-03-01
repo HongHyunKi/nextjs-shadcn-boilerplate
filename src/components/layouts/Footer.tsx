@@ -14,7 +14,7 @@ export const Footer = () => {
         </Link>
       </div>
       <div>
-        © 2024. <span className="font-semibold">Hyunki</span> all rights
+        © 2025. <span className="font-semibold">Hyunki</span> all rights
         reserved.
       </div>
     </footer>
