@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <nav className="fixed z-40 flex w-full flex-col items-center justify-center border-b bg-background shadow-sm print:hidden">
-      <div className="mt-1 flex h-[64px] w-full max-w-[1200px] items-center justify-between px-4">
+      <div className="flex h-[var(--header-height)] w-full max-w-[1200px] items-center justify-between px-4">
         <div className="flex items-center font-medium">
           {navList.map((navItem) => (
             <Link
