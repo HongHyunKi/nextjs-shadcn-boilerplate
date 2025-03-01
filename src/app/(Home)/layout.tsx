@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import '@/assets/css/globals.css';
 import { Footer } from '@/components/layouts/Footer';
 import { Header } from '@/components/layouts/Header';
 
