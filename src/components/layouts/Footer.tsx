@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import IconGithub from '@/assets/icon/IconGithub';
+import IconGithub from '@/components/common/IconGithub';
 
 export const Footer = () => {
   return (
@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="flex justify-center gap-4">
         <Link href="https://github.com/HongHyunKi" target="_blank">
           <IconGithub
-            className="fill-accent-foreground transition hover:fill-pink-600"
+            className="fill-accent-foreground transition hover:fill-gray-400"
             height={30}
             width={30}
           />
