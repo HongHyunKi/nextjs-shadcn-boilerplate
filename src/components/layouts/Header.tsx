@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { ModeToggle } from '@/components/theme/ModeToggle';
-import { NAV_LIST } from '@/constants/routes';
+import { NAV_LIST } from '@/constants';
 
 export const Header = () => {
   const pathname = usePathname();

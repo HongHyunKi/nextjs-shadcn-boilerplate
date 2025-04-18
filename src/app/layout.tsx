@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '@/config/globals.css';
-import { ThemeProvider } from '@/components/theme/theme-provider';
+import { ThemeProvider } from '@/components/theme/ThemeProvider';
 
 export const metadata: Metadata = {
   title: {

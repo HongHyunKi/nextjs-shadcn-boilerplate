@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Home',
 };
 
-export default async function Home() {
+export default async function MainPage() {
   return (
     <div>
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">

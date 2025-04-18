@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'the best project',
 };
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
