@@ -10,7 +10,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard', serif;
   }
   :root {
     --sidebar-background: 0 0% 98%;
@@ -35,7 +35,10 @@
 }
 
 :root {
+  /* layout */
   --header-height: 64px;
+  --container-max-width: 1200px;
+  --container-px: 16px;
 
   --white: hsl(210 40% 98%);
   --black: #121212;

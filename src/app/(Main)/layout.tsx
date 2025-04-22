@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import { Footer } from '@/components/layouts/Footer';
-import { Header } from '@/components/layouts/Header';
+import MainLayout from '@/components/layouts/MainLayout';
 
 export const metadata: Metadata = {
   title: {
@@ -10,18 +9,10 @@ export const metadata: Metadata = {
   description: 'the best project',
 };
 
-export default function MainLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div className="font-pretendard flex min-h-screen flex-col">
-      <Header />
-      <main className="mx-auto mt-[64px] flex w-full max-w-[1200px] flex-1 flex-col p-4">
-        {children}
-      </main>
-      <Footer />
-    </div>
-  );
+  return <MainLayout>{children}</MainLayout>;
 }

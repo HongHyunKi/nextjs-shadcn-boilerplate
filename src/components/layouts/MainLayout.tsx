@@ -4,9 +4,13 @@ import { Footer } from '@/components/layouts/Footer';
 
 function MainLayout({ children }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="max-w flex min-h-screen w-full flex-col">
       <Header />
-      <main className="mx-auto mt-[64px] flex w-full max-w-[1200px] flex-1 flex-col p-4">
+      <main
+        className={
+          'flex-co mx-auto mt-[var(--header-height)] flex w-full max-w-[var(--container-max-width)] flex-1 p-8 px-[var(--container-px)]'
+        }
+      >
         {children}
       </main>
       <Footer />
