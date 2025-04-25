@@ -4,8 +4,8 @@ import { ThemeProvider } from '@/components/theme/ThemeProvider';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | My App',
-    default: 'My Project',
+    template: '%s | Dev Hyunki',
+    default: 'Dev Hyunki',
   },
   description: 'the best project',
 };
