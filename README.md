@@ -1,4 +1,4 @@
-## Next.js +15, Tailwind CSS 3.4 and shadnc/ui
+## Next.js +15, Tailwind CSS 4.1 and shadnc/ui
 ***
 [View Demo](https://nextjs-shadcn-boilerplate-three.vercel.app/)
 
