@@ -23,9 +23,9 @@ export const Header = () => {
   return (
     <nav
       className={cn(
-        'fixed z-40 flex w-full flex-col items-center justify-center border-b bg-white shadow-sm dark:bg-black print:hidden',
+        'fixed z-40 flex w-full flex-col items-center justify-center border-b bg-white shadow-xs dark:bg-black print:hidden',
         isScrolled
-          ? 'bg-white/80 backdrop-blur-sm dark:bg-black/80'
+          ? 'bg-white/80 backdrop-blur-xs dark:bg-black/80'
           : 'bg-white dark:bg-black'
       )}
     >
