@@ -1,7 +1,5 @@
 ## Next.js +15, Tailwind CSS 4.1 and shadnc/ui
 ***
-[View Demo](https://nextjs-shadcn-boilerplate-three.vercel.app/)
-
 제가 쓰려고 만든 Next.js 프로젝트 보일러 플레이트입니다.
 
 ### 🧠 Framework & Language
