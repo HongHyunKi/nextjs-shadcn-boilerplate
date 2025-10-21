@@ -2,6 +2,8 @@
 
 > 프로덕션 레디 Next.js 15 + Tailwind CSS v4 + shadcn/ui 보일러플레이트
 
+**🔗 [Live Demo](https://nextjs-shadcn-boilerplate-beta.vercel.app/)**
+
 ![Project Preview](/public/preview.png)
 
 ## ✨ 주요 기능
