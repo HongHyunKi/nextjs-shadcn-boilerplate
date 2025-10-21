@@ -36,9 +36,9 @@ export const Header = () => {
               href={navItem.href}
               key={navItem.name}
               className={cn(
-                'rounded-full px-4 py-1 text-center text-sm transition-colors hover:text-primary',
+                'hover:text-primary rounded-full px-4 py-1 text-center text-sm transition-colors',
                 pathname === navItem.href
-                  ? 'bg-muted font-medium text-primary'
+                  ? 'bg-muted text-primary font-medium'
                   : 'text-muted-foreground'
               )}
             >
