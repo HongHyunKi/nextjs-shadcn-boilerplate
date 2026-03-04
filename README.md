@@ -44,17 +44,20 @@ yarn start
 ## 📦 기술 스택
 
 ### 코어
-- **Next.js** ^15.4.7
-- **React** ^19.1.0
+
+- **Next.js** ^16.1.5
+- **React** ^19.2.4
 - **TypeScript** ^5
 
 ### 스타일링
-- **Tailwind CSS** ^4.1.4
+
+- **Tailwind CSS** ^4.2.1
 - **shadcn/ui** - Radix UI primitives 기반
 - **next-themes** ^0.4.4
 - **lucide-react** ^0.477.0
 
 ### 개발 도구
+
 - **ESLint** ^8
 - **Prettier** ^3.5.2
 
