@@ -1,6 +1,6 @@
-# Next.js 15 Boilerplate
+# Next.js Boilerplate
 
-> 프로덕션 레디 Next.js 15 + Tailwind CSS v4 + shadcn/ui 보일러플레이트
+> 프로덕션 레디 Next.js + Tailwind CSS v4 + shadcn/ui 보일러플레이트
 
 **🔗 [Live Demo](https://nextjs-shadcn-boilerplate-beta.vercel.app/)**
 
@@ -8,9 +8,10 @@
 
 ## ✨ 주요 기능
 
-- ⚡️ **Next.js 15** - 최신 App Router와 React Server Components
+- ⚡️ **Next.js** - 최신 App Router와 React Server Components
 - 🎨 **Tailwind CSS v4** - 최신 CSS 프레임워크
-- 🧩 **shadcn/ui** - 아름답고 접근성 높은 컴포넌트
+- 🧩 **shadcn/ui 34종 컴포넌트** - 아름답고 접근성 높은 UI 컴포넌트 프리셋
+- 📄 **컴포넌트 데모 페이지** - `/components`에서 모든 UI 컴포넌트 미리보기
 - 🌗 **다크모드** - next-themes를 사용한 완벽한 다크모드 지원
 - 📱 **완전 반응형** - 모바일부터 데스크톱까지 완벽 대응
 - 🔒 **TypeScript** - 타입 안전성과 개발자 경험 향상
@@ -41,6 +42,25 @@ yarn build
 yarn start
 ```
 
+## 🧩 포함된 shadcn/ui 컴포넌트
+
+| 카테고리       | 컴포넌트                                                                                            |
+| -------------- | --------------------------------------------------------------------------------------------------- |
+| **General**    | Button, Badge, Toggle, Toggle Group                                                                 |
+| **Forms**      | Input, Textarea, Label, Checkbox, Radio Group, Select, Switch, Slider, Form (react-hook-form + zod) |
+| **Display**    | Card, Avatar, Skeleton, Separator, Accordion, Table, Progress, Scroll Area                          |
+| **Feedback**   | Alert, Alert Dialog, Dialog, Sonner (Toast)                                                         |
+| **Overlay**    | Dropdown Menu, Sheet, Drawer, Popover, Tooltip, Command                                             |
+| **Navigation** | Tabs, Breadcrumb, Pagination                                                                        |
+
+> `/components` 페이지에서 모든 컴포넌트의 라이브 데모를 확인할 수 있습니다.
+
+### 컴포넌트 추가
+
+```bash
+npx shadcn@latest add [component-name]
+```
+
 ## 📦 기술 스택
 
 ### 코어
@@ -53,29 +73,39 @@ yarn start
 
 - **Tailwind CSS** ^4.2.1
 - **shadcn/ui** - Radix UI primitives 기반
-- **next-themes** ^0.4.4
-- **lucide-react** ^0.477.0
+- **next-themes** ^0.4.6
+- **lucide-react** ^0.576.0
+
+### 폼 & 유효성 검사
+
+- **react-hook-form** ^7.71.2
+- **zod** ^4.3.6
+- **@hookform/resolvers** ^5.2.2
 
 ### 개발 도구
 
 - **ESLint** ^8
-- **Prettier** ^3.5.2
+- **Prettier** ^3.8.1
 
 ## 📁 프로젝트 구조
 
 ```
 src/
-├── app/              # Next.js App Router
-│   ├── (Main)/      # 메인 레이아웃 그룹
-│   └── layout.tsx   # 루트 레이아웃
-├── components/       # React 컴포넌트
-│   ├── ui/          # shadcn/ui 컴포넌트
-│   ├── layouts/     # 레이아웃 컴포넌트
-│   ├── theme/       # 테마 관련 컴포넌트
-│   └── common/      # 공통 컴포넌트
-├── constants/       # 상수 정의
-├── lib/             # 유틸리티 함수
-└── css/             # 글로벌 스타일
+├── app/                # Next.js App Router
+│   └── (Main)/         # 메인 레이아웃 그룹
+│       ├── page.tsx            # 홈
+│       ├── components/page.tsx # 컴포넌트 데모
+│       └── typography/page.tsx # 타이포그래피
+├── components/
+│   ├── ui/             # shadcn/ui 컴포넌트 (34종)
+│   ├── demos/          # 컴포넌트 데모 파일 (34개)
+│   ├── layouts/        # Header, Footer, MainLayout
+│   ├── theme/          # ThemeProvider, ModeToggle
+│   └── common/         # 공통 컴포넌트
+├── constants/          # 라우트, 상수 정의
+├── lib/                # 유틸리티 함수 (cn)
+├── hooks/              # 커스텀 React 훅
+└── css/                # 글로벌 스타일 (OKLCH 테마)
 ```
 
 ## 🎯 주요 명령어
