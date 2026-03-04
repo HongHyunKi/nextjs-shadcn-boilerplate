@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '@/css/globals.css';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
+import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +23,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
