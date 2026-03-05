@@ -29,7 +29,7 @@ export default function MainPage() {
         <div className="container flex flex-col items-center gap-8 text-center">
           <div className="bg-muted/50 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm backdrop-blur-sm">
             <Sparkles className="text-primary h-4 w-4" />
-            <span className="font-medium">Next.js 15 + Tailwind CSS v4</span>
+            <span className="font-medium">Next.js 16 + Tailwind CSS v4</span>
           </div>
 
           <h1 className="from-foreground to-foreground/70 max-w-4xl bg-gradient-to-br bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
@@ -41,7 +41,7 @@ export default function MainPage() {
           </h1>
 
           <p className="text-muted-foreground max-w-2xl text-base sm:text-lg md:text-xl">
-            A production-ready boilerplate with Next.js 15, Tailwind CSS v4,
+            A production-ready boilerplate with Next.js 16, Tailwind CSS v4,
             shadcn/ui, and TypeScript. Start building beautiful, responsive web
             applications today.
           </p>
@@ -87,7 +87,7 @@ export default function MainPage() {
               </div>
               <h3 className="mb-2 text-xl font-semibold">Lightning Fast</h3>
               <p className="text-muted-foreground text-sm">
-                Built on Next.js 15 with React Server Components for optimal
+                Built on Next.js 16 with React Server Components for optimal
                 performance and SEO.
               </p>
             </div>
@@ -169,7 +169,7 @@ export default function MainPage() {
 
           <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
             {[
-              { name: 'Next.js 15', desc: 'React Framework' },
+              { name: 'Next.js 16', desc: 'React Framework' },
               { name: 'React 19', desc: 'UI Library' },
               { name: 'Tailwind v4', desc: 'CSS Framework' },
               { name: 'TypeScript', desc: 'Type Safety' },
