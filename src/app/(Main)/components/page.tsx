@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import LazyMount from '@/components/common/LazyMount';
 import { cn } from '@/lib/utils';
 
 import ButtonDemo from '@/components/demos/button-demo';
@@ -170,7 +171,9 @@ export default function ComponentsPage() {
                   <div key={comp.name}>
                     <h3 className="mb-4 text-lg font-semibold">{comp.name}</h3>
                     <div className="rounded-lg border p-6">
-                      <comp.component />
+                      <LazyMount>
+                        <comp.component />
+                      </LazyMount>
                     </div>
                   </div>
                 ))}
